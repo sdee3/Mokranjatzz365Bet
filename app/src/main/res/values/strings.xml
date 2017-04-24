@@ -1,6 +1,26 @@
 <resources>
+    <string name="app_name" translatable="false">Mokranjatzz365Bet</string>
+
     <string name="welcome">Dobrodošli na Mokranjatzz365Bet!</string>
     <string name="signup">Novi korisnik?</string>
-    <string name="login">Postojeći korisnik</string>
-    <string name="app_name" translatable="false">Mokranjatzz365Bet</string>
+    <string name="existing_user">Postojeći korisnik</string>
+    <string name="email">E-mail adresa</string>
+    <string name="password">Lozinka</string>
+    <string name="login">Uloguj se</string>
+    <string name="register">Registruj me!</string>
+    
+    <string name="full_name">Ime i prezime</string>
+    <string name="username">Korisničko ime</string>
+
+    <string name="usage_rights">Prava korišćenja</string>
+
+    //Tekstovi
+    <string name="register_info">Dobrodošli!\n\nMokranjatzz365Bet je Vaša <b>nova omiljena</b> kladionica! Preporučujemo da pažljivo pročitate <b>prava i uslove korišćenja</b>.\n\nDozvoljeno samo punoletnim osobama.</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Otvori navigaciju</string>
+    <string name="navigation_drawer_close">Zatvori navigatiju</string>
+
+    <string name="action_settings">Settings</string>
+
 </resources>
