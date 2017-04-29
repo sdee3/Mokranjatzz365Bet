@@ -10,9 +10,10 @@
 
     <Button
         android:id="@+id/btn_usage_rights"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/usage_rights"
+        android:onClick="usageRights"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -88,9 +89,10 @@
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/buttonSignIn"
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick=""
             android:text="@string/register" />
 
     </LinearLayout>
