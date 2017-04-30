@@ -4,18 +4,28 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="5dp"
-    android:paddingLeft="5dp"
-    android:paddingRight="5dp"
-    android:paddingTop="5dp"
+    android:padding="8dp"
     tools:context="rs.stefandjokic.mokranjatzz365bet.MainActivity">
 
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="300dp"
+        android:layout_weight="1"
         android:background="@drawable/mokranjac"
+        android:contentDescription="Stevan Stojanović Mokranjac"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
 
@@ -23,8 +33,9 @@
         android:paddingBottom="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true">
 
         <Button
             android:id="@+id/buttonSignIn"
@@ -41,15 +52,17 @@
             android:onClick="registerActivity"
             android:layout_weight="1"
             android:text="@string/signup" />
+
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome"
-        android:textAlignment="center"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="42dp" />
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/test_ad_unit_id" />
+
 </RelativeLayout>

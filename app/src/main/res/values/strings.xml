@@ -14,11 +14,15 @@
     <string name="logout">Izloguj se</string>
     <string name="home">Početna</string>
 
+    <!--Firebase-->
+    <string name="test_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
     <!--In - app bullsh*t-->
     <string name="lista">Lista</string>
     <string name="tiketi">Pregled tiketa</string>
     <string name="sportovi">Sportovi</string>
     <string name="usage_rights">Prava korišćenja</string>
+    <string name="pick_kvota_title">Izabrana utakmica:</string>
 
     <!--Za navigaciju i ostalo definisano od strane Android-a-->
     <string name="title_activity_home">Početna</string>

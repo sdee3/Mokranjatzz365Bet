@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="8dp"
+        android:textSize="16sp">
+    <!--Heading-->
+    <TableRow
+        android:layout_margin="16dp"
+        android:id="@+id/pickKvotaHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pickKvotaTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/pick_kvota_title" />
+
+        <TextView
+            android:id="@+id/pickKvotaMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="Junkovac - Mladi Borac"
+            android:textAlignment="textEnd"/>
+
+    </TableRow>
+
+    <!--Horizontalna linija-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <!--Tabela sa kvotama-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/pickKvotaKvote1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textSize="22sp">
+
+            <TextView
+                android:id="@+id/pickKvota1Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="KI 1:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pickKvota1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/colorAccent"
+                android:text="aaaa"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pickKvotaXTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="KI X:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pickKvotaX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/colorAccent"
+                android:text="aaaa"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pickKvota2Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="KI 2:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pickKvota2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/colorAccent"
+                android:text="aaaa"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/pickKvotaKvote2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:textSize="22sp">
+
+            <TextView
+                android:id="@+id/pickKvota02Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="UG 0-2:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pickKvota02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/colorAccent"
+                android:text="aaaa"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pickKvota3pTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="UG 3+:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pickKvota3p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/colorAccent"
+                android:text="aaaa"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pickKvotaSpecijalTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Specijal:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pickKvotaSpecijal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/colorAccent"
+                android:text="aaaa"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <!--Horizontalna linija-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <!--Dugmad 1, X, 2-->
+    <TableRow
+        android:padding="8dp"
+        android:id="@+id/pickKvotaButtons1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:textSize="14sp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/btn1"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/btnX"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/btn2"
+            android:layout_gravity="center_vertical" />
+
+    </TableRow>
+
+    <!--Dugmad 0-2, 3+, Specijal-->
+    <TableRow
+        android:padding="8dp"
+        android:id="@+id/pickKvotaButtons2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:textSize="14sp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0-2"
+            android:id="@+id/btn02"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3+"
+            android:id="@+id/btn3p"
+            android:layout_gravity="center_vertical" />
+
+    </TableRow>
+
+    <!--Dugme Specijal-->
+    <TableRow
+        android:padding="8dp"
+        android:id="@+id/pickKvotaButtons3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:textSize="14sp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specijal: Peta Rukovet"
+            android:id="@+id/btnSpecijal"
+            android:layout_gravity="center_vertical" />
+
+    </TableRow>
+
+    <!--Horizontalna linija-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <!--Reklama-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pickKvotaAdView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/test_ad_unit_id" />
+
+    </RelativeLayout>
+
+</LinearLayout>
