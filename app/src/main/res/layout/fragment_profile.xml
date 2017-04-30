@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/update_profile"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <!--Place default Mokranjatzz User IMG here-->
+        <ImageView
+            android:layout_gravity="center"
+            android:contentDescription="Default Mokranjatzz User Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_camera"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stefan Đokić"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="stefd996@gmail.com"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <!--Stanje na računu-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/kreditTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_value"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:id="@+id/kredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234.1234"
+                android:textSize="16sp"/>
+
+        </TableRow>
+
+        <!--Horizontalna linija-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/changePasswordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password_txt" />
+
+        <EditText
+            android:id="@+id/editPassword1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/new_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/repeat_password"
+            android:inputType="textPassword" />
+
+        <!--Dugme za promenu lozinke-->
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update" />
+
+    </LinearLayout>
+
+</RelativeLayout>
