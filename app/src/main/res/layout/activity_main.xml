@@ -9,6 +9,14 @@
     android:padding="8dp"
     tools:context="rs.stefandjokic.mokranjatzz365bet.MainActivity">
 
+    <!-- Stop auto focusing the EditText -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView2"
