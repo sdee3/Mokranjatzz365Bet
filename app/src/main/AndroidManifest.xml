@@ -9,20 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignIn" />
-        <activity android:name=".Register" />
+        <activity
+            android:name=".SignIn"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity   android:name=".UsageRights"
-                    android:parentActivityName=".Register" >
+        <activity
+            android:name=".UsageRights"
+            android:parentActivityName=".Register"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="rs.stefandjokic.mokranjatzz365bet.Register"
