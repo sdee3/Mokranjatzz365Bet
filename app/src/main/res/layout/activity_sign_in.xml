@@ -9,12 +9,12 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/linearLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="75dp"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/collina2" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,13 +53,16 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adUnitId="YOUR_AD_UNIT_ID"
+        ads:adSize="BANNER"
+        android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:layout_below="@+id/linearLayout"
-        android:layout_alignStart="@+id/imageView3"
-        android:layout_marginTop="68dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        />
 
 </RelativeLayout>
