@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -21,47 +23,51 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_weight="1"
-        android:background="@drawable/mokranjac"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/mokranjac_default_user"
         android:contentDescription="Stevan Stojanović Mokranjac"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:gravity="center_horizontal|center"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
 
     <LinearLayout
-        android:paddingBottom="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
         android:layout_below="@+id/imageView"
-        android:layout_alignParentStart="true">
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="64dp"
+        android:paddingTop="16dp">
 
         <Button
             android:id="@+id/buttonSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="loginActivity"
             android:layout_weight="1"
+            android:onClick="loginActivity"
             android:text="@string/login" />
 
         <Button
             android:id="@+id/buttonSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="registerActivity"
             android:layout_weight="1"
+            android:onClick="registerActivity"
             android:text="@string/signup" />
 
     </LinearLayout>
 
-    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
+        android:layout_weight="1"
         ads:adSize="BANNER"
         ads:adUnitId="@string/test_ad_unit_id" />
 
