@@ -67,7 +67,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_weight="1"
         ads:adSize="BANNER"
         ads:adUnitId="@string/test_ad_unit_id" />
 
