@@ -24,6 +24,8 @@
     <string name="sportovi">Sportovi</string>
     <string name="usage_rights">Prava korišćenja</string>
     <string name="pick_kvota_title">Izabrana utakmica:</string>
+    <string name="pick_kvota_date">Datum utakmice:</string>
+    <string name="pick_kvota_time">Vreme utakmice:</string>
     <string name="update_profile">Pregled profila / Promena lozinke</string>
     <string name="new_password">Unesite novu lozinku:</string>
     <string name="repeat_password">Ponovite lozinku:</string>

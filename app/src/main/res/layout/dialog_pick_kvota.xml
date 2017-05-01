@@ -6,31 +6,89 @@
         android:layout_height="fill_parent"
         android:layout_margin="8dp"
         android:textSize="16sp">
+
     <!--Heading-->
-    <TableRow
-        android:layout_margin="16dp"
-        android:id="@+id/pickKvotaHeading"
+    <TableLayout
+        android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/pickKvotaTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="@string/pick_kvota_title" />
+        <TableRow
+            android:layout_marginBottom="4dp"
+            android:id="@+id/pickKvotaHeading1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/pickKvotaMatch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            android:text="Junkovac - Mladi Borac"
-            android:textAlignment="textEnd"/>
+            <TextView
+                android:labelFor="@+id/pickKvotaMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pick_kvota_title" />
 
-    </TableRow>
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:id="@+id/pickKvotaMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="Junkovac - Mladi Borac"
+                android:textAlignment="textEnd"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="4dp"
+            android:id="@+id/pickKvotaHeading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:labelFor="@+id/pickKvotaDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pick_kvota_date" />
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:id="@+id/pickKvotaDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="09.05.2017"
+                android:textAlignment="textStart"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="4dp"
+            android:id="@+id/pickKvotaHeading3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:labelFor="@+id/pickKvotaTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pick_kvota_time" />
+
+            <TextView
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:id="@+id/pickKvotaTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="12:30"
+                android:textAlignment="textStart"/>
+
+        </TableRow>
+
+    </TableLayout>
 
     <!--Horizontalna linija-->
     <View
@@ -166,23 +224,6 @@
 
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
     </TableLayout>
 
     <!--Horizontalna linija-->
