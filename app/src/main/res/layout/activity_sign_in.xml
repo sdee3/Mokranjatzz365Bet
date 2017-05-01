@@ -48,6 +48,7 @@
         </LinearLayout>
 
         <TextView
+            android:labelFor="@id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/email"/>
@@ -59,6 +60,7 @@
             android:inputType="textEmailAddress" />
 
         <TextView
+            android:labelFor="@id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/password"/>
