@@ -1,4 +1,4 @@
-package rs.stefandjokic.mokranjatzz365bet.activities.models;
+package rs.stefandjokic.mokranjatzz365bet.models;
 
 public class User {
 

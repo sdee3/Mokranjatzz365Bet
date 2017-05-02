@@ -14,10 +14,10 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import rs.stefandjokic.mokranjatzz365bet.R;
-import rs.stefandjokic.mokranjatzz365bet.activities.api.APIService;
-import rs.stefandjokic.mokranjatzz365bet.activities.api.API_URL;
-import rs.stefandjokic.mokranjatzz365bet.activities.models.Result;
-import rs.stefandjokic.mokranjatzz365bet.activities.models.User;
+import rs.stefandjokic.mokranjatzz365bet.api.APIService;
+import rs.stefandjokic.mokranjatzz365bet.api.API_URL;
+import rs.stefandjokic.mokranjatzz365bet.models.Result;
+import rs.stefandjokic.mokranjatzz365bet.models.User;
 
 public class RegisterActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package rs.stefandjokic.mokranjatzz365bet.activities.api;
+package rs.stefandjokic.mokranjatzz365bet.api;
 
 public class API_URL {
 

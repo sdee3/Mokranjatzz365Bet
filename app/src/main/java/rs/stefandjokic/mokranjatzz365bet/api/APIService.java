@@ -1,11 +1,11 @@
-package rs.stefandjokic.mokranjatzz365bet.activities.api;
+package rs.stefandjokic.mokranjatzz365bet.api;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
-import rs.stefandjokic.mokranjatzz365bet.activities.models.Result;
+import rs.stefandjokic.mokranjatzz365bet.models.Result;
 
 public interface APIService {
 
