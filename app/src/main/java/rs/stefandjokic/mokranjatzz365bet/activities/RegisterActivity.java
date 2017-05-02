@@ -16,6 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import rs.stefandjokic.mokranjatzz365bet.R;
 import rs.stefandjokic.mokranjatzz365bet.api.APIService;
 import rs.stefandjokic.mokranjatzz365bet.api.API_URL;
+import rs.stefandjokic.mokranjatzz365bet.helper.SharedPreferencesManager;
 import rs.stefandjokic.mokranjatzz365bet.models.Result;
 import rs.stefandjokic.mokranjatzz365bet.models.User;
 
@@ -28,7 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        //Inicijalizacija banner-a
+        //Inicijalizacija banner-a !!kojeg nema!!
         /*
 
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-3940256099942544~3347511713");
@@ -67,7 +68,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         //Retrofit Object
         Retrofit retrofit = new Retrofit.Builder().baseUrl(API_URL.BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
-        //Defining retrofit api service
+        //Defining Retrofit API service
         APIService service = retrofit.create(APIService.class);
 
 
@@ -86,6 +87,13 @@ public class RegisterActivity extends AppCompatActivity {
 
                 //Displaying the message from the response as toast
                 Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_LONG).show();
+
+                //Ako nema greške, ide se na Home Page!
+                if(!response.body().getError()){
+                    finish();
+                    SharedPreferencesManager.getInstance(getApplicationContext()).userLogin(response.body().getUser());
+                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                }
             }
 
             @Override
