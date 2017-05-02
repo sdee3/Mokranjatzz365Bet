@@ -31,6 +31,8 @@
     <string name="repeat_password">Ponovite lozinku:</string>
     <string name="credit_value">Stanje na računu (RSD): </string>
     <string name="change_password_txt">Promena lozinke</string>
+    <string name="total_kvota">Ukupna kvota:</string>
+    <string name="potential_win">Potencijalni dobitak (RSD):</string>
 
     <!--Za navigaciju i ostalo definisano od strane Android-a-->
     <string name="title_activity_home">Početna</string>

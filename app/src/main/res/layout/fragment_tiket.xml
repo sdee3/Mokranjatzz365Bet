@@ -1,15 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerViewTiket"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="8dp">
 
-    </android.support.v7.widget.RecyclerView>
+        <TableLayout
+            android:id="@+id/tabelaTiket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp">
 
-</LinearLayout>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
 
-<!-- TODO Ukupna kvota na dnu RecyclerView-a -->
+                <TextView
+                    android:labelFor="@+id/tiketUkupnaKvota"
+                    android:text="@string/total_kvota"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tiketUkupnaKvota"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:text="aaaa"
+                    android:layout_marginStart="16dp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:labelFor="@+id/tiketUkupniDobitak"
+                    android:text="@string/potential_win"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tiketUkupniDobitak"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:text="aaaa"
+                    android:layout_marginStart="16dp"/>
+
+            </TableRow>
+
+            <!--Horizontalna linija-->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+        </TableLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/tabelaTiket"
+            android:id="@+id/recyclerViewTiket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</ScrollView>
