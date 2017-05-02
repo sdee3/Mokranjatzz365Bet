@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -64,14 +59,36 @@
 
         </TableLayout>
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabelaTiket">
+
         <android.support.v7.widget.RecyclerView
-            android:layout_below="@id/tabelaTiket"
             android:id="@+id/recyclerViewTiket"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         </android.support.v7.widget.RecyclerView>
 
+    </ScrollView>
+
+        <TableRow
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:paddingBottom="8dp"
+                android:layout_width="wrap_content"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:clickable="false"
+                android:contentDescription="Play!"
+                android:src="@drawable/ic_send" />
+        </TableRow>
+
     </RelativeLayout>
 
-</ScrollView>
+

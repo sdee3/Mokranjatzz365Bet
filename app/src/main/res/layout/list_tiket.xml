@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -21,15 +21,40 @@
                 android:layout_height="wrap_content"
                 android:text="Engleska 1" />
 
-            <TextView
+            <TableRow
                 android:paddingTop="8dp"
-                android:id="@+id/textViewUtakmica"
+                android:layout_below="@id/textViewLiga"
+                android:id="@+id/tabelaUtakmicaTip"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Junkovac - Mladi Borac"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:id="@+id/textViewUtakmica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Junkovac - Mladi Borac"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <!--  ADDED SPACER VIEW -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+                <ImageButton
+                    style="@android:style/Widget.DeviceDefault.ImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:contentDescription="Delete Match"
+                    android:src="@drawable/ic_delete" />
+
+            </TableRow>
 
             <TableRow
+                android:layout_below="@id/tabelaUtakmicaTip"
                 android:paddingTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -50,7 +75,7 @@
 
             </TableRow>
 
-        </LinearLayout>
+        </RelativeLayout>
 
 
     </android.support.v7.widget.CardView>
