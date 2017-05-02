@@ -9,7 +9,7 @@ import rs.stefandjokic.mokranjatzz365bet.models.User;
 public class SharedPreferencesManager {
 
     private static SharedPreferencesManager instance;
-    private static Context context;
+    private Context context;
 
     private static final String SHARED_PREF_NAME = "mokranjatzz365betsharedprefretrofit";
 
