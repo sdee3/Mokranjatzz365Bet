@@ -15,19 +15,19 @@ public class User {
         this.full_name = gender;
     }
 
-    public User(int id, String name, String email, String gender){
+    public User(int id, String username, String email, String full_name){
         this.id = id;
-        this.username = name;
+        this.username = username;
         this.email = email;
-        this.full_name = gender;
+        this.full_name = full_name;
     }
 
-    public User(int id, String name, String email, String password, String gender) {
+    public User(int id, String username, String email, String password, String full_name) {
         this.id = id;
-        this.username = name;
+        this.username = username;
         this.email = email;
         this.password = password;
-        this.full_name = gender;
+        this.full_name = full_name;
     }
 
     public int getId() {
