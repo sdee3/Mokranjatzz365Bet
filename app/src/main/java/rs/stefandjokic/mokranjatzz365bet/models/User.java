@@ -8,11 +8,11 @@ public class User {
     private String password;
     private String full_name;
 
-    public User(String name, String email, String password, String gender) {
+    public User(String name, String email, String password, String full_name) {
         this.username = name;
         this.email = email;
         this.password = password;
-        this.full_name = gender;
+        this.full_name = full_name;
     }
 
     public User(int id, String username, String email, String full_name){
@@ -48,6 +48,12 @@ public class User {
 
     public String getFullname() {
         return full_name;
+    }
+
+    public String toString(){
+
+        return id + " " + username + " " + email + " " + password + " " + full_name + "\n";
+
     }
 
 }

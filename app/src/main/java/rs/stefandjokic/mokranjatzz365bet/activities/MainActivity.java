@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 import com.google.android.gms.ads.MobileAds;
 
 import rs.stefandjokic.mokranjatzz365bet.R;
+import rs.stefandjokic.mokranjatzz365bet.helper.SharedPreferencesManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
+        //Ako je User već ulogovan:
+        if(SharedPreferencesManager.getInstance(this.getApplicationContext()).isLoggedIn()){
+            finish();
+            startActivity(new Intent(this, HomeActivity.class));
+        }else {
+            Toast.makeText(getApplicationContext(), String.valueOf(SharedPreferencesManager.getInstance(getApplicationContext()).getUser()), Toast.LENGTH_LONG).show();
+        }
     }
 
 

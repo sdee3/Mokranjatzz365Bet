@@ -50,7 +50,7 @@ public class SharedPreferencesManager {
 
         SharedPreferences sharedPreferences = context.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
 
-        return (sharedPreferences.getString(KEY_USER_EMAIL, null) != null ) || (sharedPreferences.getString(KEY_USER_USERNAME, null) != null);
+        return ((sharedPreferences.getString(KEY_USER_EMAIL, null) != null ) || (sharedPreferences.getString(KEY_USER_USERNAME, null) != null));
     }
 
     public User getUser(){
@@ -62,7 +62,6 @@ public class SharedPreferencesManager {
                 sharedPreferences.getString(KEY_USER_USERNAME, null),
                 sharedPreferences.getString(KEY_USER_FULL_NAME, null),
                 sharedPreferences.getString(KEY_USER_EMAIL, null)
-
         );
 
     }
