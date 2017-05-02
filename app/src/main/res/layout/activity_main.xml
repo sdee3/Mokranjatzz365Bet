@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    tools:context="rs.stefandjokic.mokranjatzz365bet.MainActivity">
+    tools:context="rs.stefandjokic.mokranjatzz365bet.activities.MainActivity">
 
     <!-- Stop auto focusing the EditText -->
     <LinearLayout

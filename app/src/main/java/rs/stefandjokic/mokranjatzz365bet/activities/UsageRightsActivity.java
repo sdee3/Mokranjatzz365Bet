@@ -1,9 +1,11 @@
-package rs.stefandjokic.mokranjatzz365bet;
+package rs.stefandjokic.mokranjatzz365bet.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class UsageRights extends AppCompatActivity {
+import rs.stefandjokic.mokranjatzz365bet.R;
+
+public class UsageRightsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

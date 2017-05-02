@@ -1,4 +1,4 @@
-package rs.stefandjokic.mokranjatzz365bet;
+package rs.stefandjokic.mokranjatzz365bet.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,7 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Home extends AppCompatActivity
+import rs.stefandjokic.mokranjatzz365bet.R;
+
+public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
@@ -53,7 +55,7 @@ public class Home extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
+        // automatically handle clicks on the HomeActivity/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 

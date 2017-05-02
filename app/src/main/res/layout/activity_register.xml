@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="8dp"
     android:layout_margin="8dp"
-    tools:context="rs.stefandjokic.mokranjatzz365bet.Register">
+    tools:context="rs.stefandjokic.mokranjatzz365bet.activities.RegisterActivity">
 
     <Button
         android:id="@+id/btn_usage_rights"
