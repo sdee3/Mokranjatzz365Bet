@@ -53,7 +53,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-    private void userSignUp(){
+    public void userSignUp(View view){
 
         //Progress dialog:
         final ProgressDialog progressDialog = new ProgressDialog(this);
