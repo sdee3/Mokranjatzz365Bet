@@ -14,6 +14,7 @@
     <string name="logout">Izloguj se</string>
     <string name="home">Početna</string>
     <string name="update">Ažuriraj</string>
+    <string name="slogan">\"Igra je melodija života.\"</string>
 
     <!--Firebase-->
     <string name="test_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>

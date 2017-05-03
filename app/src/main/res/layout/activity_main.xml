@@ -9,46 +9,55 @@
     android:padding="8dp"
     tools:context="rs.stefandjokic.mokranjatzz365bet.activities.MainActivity">
 
-    <!-- Stop auto focusing the EditText -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/transparent"
-        android:focusable="true"
-        android:focusableInTouchMode="true">
-    </LinearLayout>
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewWelcome"
+        android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="16dp"
         android:text="@string/welcome"
         android:textAlignment="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:textStyle="bold|italic"
+        android:id="@+id/textViewSlogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/slogan"
+        android:textAlignment="center"
+        android:layout_above="@+id/imgMokranjac"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp"/>
+
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:id="@+id/imgMokranjac"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:background="@drawable/mokranjac_default_user"
         android:contentDescription="Stevan Stojanović Mokranjac"
-        android:gravity="center_horizontal|center"
-        android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1856 - 1914"
+        android:layout_below="@id/imgMokranjac"
+        android:textStyle="bold"
+        android:gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/imageView"
-        android:gravity="bottom"
         android:orientation="horizontal"
         android:paddingBottom="64dp"
-        android:paddingTop="16dp">
+        android:paddingTop="16dp"
+        android:id="@+id/linearLayout2">
 
         <Button
             android:id="@+id/buttonSignIn"
