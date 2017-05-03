@@ -8,14 +8,14 @@ public class User {
     private String password;
     private String full_name;
 
-    public User(String name, String email, String password, String full_name) {
-        this.username = name;
-        this.email = email;
+    public User(String username, String password, String email, String full_name) {
+        this.username = username;
         this.password = password;
+        this.email = email;
         this.full_name = full_name;
     }
 
-    public User(int id, String username, String email, String full_name){
+    public User(int id, String username, String full_name, String email){
         this.id = id;
         this.username = username;
         this.email = email;
@@ -52,7 +52,7 @@ public class User {
 
     public String toString(){
 
-        return id + " " + username + " " + email + " " + password + " " + full_name + "\n";
+        return this.id + " " + this.username + " " + this.email + " " + this.password + " " + this.full_name + "\n";
 
     }
 

@@ -55,6 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void userSignUp(View view){
+        /*TODO: Provera karaktera, dužine stringova, jačine lozinke, mejla*/
 
         //Progress dialog:
         final ProgressDialog progressDialog = new ProgressDialog(this);
@@ -64,16 +65,15 @@ public class RegisterActivity extends AppCompatActivity {
         String username = editTextUsername.getText().toString().trim();
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
-        String full_name = editTextFullName.getText().toString().trim();
+        String full_name = editTextFullName.getText().toString();
 
         //Retrofit Object
         Retrofit retrofit = new Retrofit.Builder().baseUrl(API_URL.BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
         //Defining Retrofit API service
         APIService service = retrofit.create(APIService.class);
 
-
         //New User object:
-        User user = new User(username, email, password, full_name);
+        User user = new User(username, password, email, full_name);
 
         //Defining the Call
         Call<Result> call = service.createUser(user.getUsername(), user.getPassword(), user.getEmail(), user.getFullname());
@@ -98,6 +98,7 @@ public class RegisterActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Result> call, Throwable t) {
+                /* TODO: Ako tekst sadržzi "Unable to connect", prevesti na naš jezik :D */
                 progressDialog.dismiss();
                 Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
             }

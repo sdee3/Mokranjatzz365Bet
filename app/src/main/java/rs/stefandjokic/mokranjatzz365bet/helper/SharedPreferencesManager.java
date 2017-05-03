@@ -2,7 +2,6 @@ package rs.stefandjokic.mokranjatzz365bet.helper;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 
 import rs.stefandjokic.mokranjatzz365bet.models.User;
 
@@ -11,15 +10,15 @@ public class SharedPreferencesManager {
     private static SharedPreferencesManager instance;
     private Context context;
 
-    private static final String SHARED_PREF_NAME = "mokranjatzz365betsharedprefretrofit";
+    private static final String SHARED_PREF_NAME = "m365bet_shared_pref";
 
-    private static final String KEY_USER_ID = "keyuserid";
-    private static final String KEY_USER_USERNAME = "keyuserusername";
-    private static final String KEY_USER_EMAIL = "keyuseremail";
-    private static final String KEY_USER_FULL_NAME = "keyuserfullname";
+    private static final String KEY_USER_ID = "key_user_id";
+    private static final String KEY_USER_USERNAME = "key_user_username";
+    private static final String KEY_USER_EMAIL = "key_user_email";
+    private static final String KEY_USER_FULL_NAME = "key_user_full_name";
 
-    private SharedPreferencesManager(Context context){
-        this.context = context;
+    private SharedPreferencesManager(Context ctx){
+        context = ctx;
     }
 
     public static synchronized SharedPreferencesManager getInstance(Context context){
@@ -33,7 +32,7 @@ public class SharedPreferencesManager {
 
     public boolean userLogin(User user){
 
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences sharedPreferences = context.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         editor.putInt(KEY_USER_ID, user.getId());
@@ -50,7 +49,7 @@ public class SharedPreferencesManager {
 
         SharedPreferences sharedPreferences = context.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
 
-        return ((sharedPreferences.getString(KEY_USER_EMAIL, null) != null ) || (sharedPreferences.getString(KEY_USER_USERNAME, null) != null));
+        return ((sharedPreferences.getString(KEY_USER_EMAIL, null) != null ) && (sharedPreferences.getString(KEY_USER_USERNAME, null) != null));
     }
 
     public User getUser(){
