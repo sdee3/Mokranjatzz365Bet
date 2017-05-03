@@ -7,6 +7,7 @@ public class User {
     private String email;
     private String password;
     private String full_name;
+    private float credit;
 
     public User(String username, String password, String email, String full_name) {
         this.username = username;
@@ -15,11 +16,12 @@ public class User {
         this.full_name = full_name;
     }
 
-    public User(int id, String username, String full_name, String email){
+    public User(int id, String username, String full_name, String email, float credit){
         this.id = id;
         this.username = username;
         this.email = email;
         this.full_name = full_name;
+        this.credit = credit;
     }
 
     public User(int id, String username, String email, String password, String full_name) {
@@ -54,6 +56,10 @@ public class User {
 
         return this.id + " " + this.username + " " + this.email + " " + this.password + " " + this.full_name + "\n";
 
+    }
+
+    public float getCredit() {
+        return credit;
     }
 
 }

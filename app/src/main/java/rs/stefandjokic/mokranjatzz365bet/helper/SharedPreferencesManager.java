@@ -16,6 +16,7 @@ public class SharedPreferencesManager {
     private static final String KEY_USER_USERNAME = "key_user_username";
     private static final String KEY_USER_EMAIL = "key_user_email";
     private static final String KEY_USER_FULL_NAME = "key_user_full_name";
+    private static final String KEY_USER_CREDIT = "key_user_credit";
 
     private SharedPreferencesManager(Context ctx){
         context = ctx;
@@ -39,6 +40,7 @@ public class SharedPreferencesManager {
         editor.putString(KEY_USER_USERNAME, user.getUsername());
         editor.putString(KEY_USER_EMAIL, user.getEmail());
         editor.putString(KEY_USER_FULL_NAME, user.getFullname());
+        editor.putFloat(KEY_USER_CREDIT, user.getCredit());
 
         editor.apply();
         return true;
@@ -60,7 +62,8 @@ public class SharedPreferencesManager {
                 sharedPreferences.getInt(KEY_USER_ID, 0),
                 sharedPreferences.getString(KEY_USER_USERNAME, null),
                 sharedPreferences.getString(KEY_USER_FULL_NAME, null),
-                sharedPreferences.getString(KEY_USER_EMAIL, null)
+                sharedPreferences.getString(KEY_USER_EMAIL, null),
+                sharedPreferences.getFloat(KEY_USER_CREDIT, 0)
         );
 
     }
