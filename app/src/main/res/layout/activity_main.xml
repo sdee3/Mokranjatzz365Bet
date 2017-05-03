@@ -77,6 +77,18 @@
 
     </LinearLayout>
 
+    <android.support.design.widget.FloatingActionButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="Ko je Stevan Stojanović Mokranjac?"
+        android:layout_margin="8dp"
+        android:layout_above="@id/linearLayout2"
+        android:onClick="launchMokranjacInfo"
+        android:src="@drawable/ic_info"
+        app:fabSize="auto" />
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"

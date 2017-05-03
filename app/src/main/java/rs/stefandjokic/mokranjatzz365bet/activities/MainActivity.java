@@ -1,9 +1,11 @@
 package rs.stefandjokic.mokranjatzz365bet.activities;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
@@ -48,6 +50,16 @@ public class MainActivity extends AppCompatActivity {
     public void registerActivity(View view) {
 
         startActivity(new Intent(this, RegisterActivity.class));
+
+    }
+
+    public void launchMokranjacInfo(View view) {
+        //Open Wiki page: https://sr.wikipedia.org/sr-el/%D0%A1%D1%82%D0%B5%D0%B2%D0%B0%D0%BD_%D0%A1%D1%82%D0%BE%D1%98%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%9B_%D0%9C%D0%BE%D0%BA%D1%80%D0%B0%D1%9A%D0%B0%D1%86
+
+        String url = "https://sr.wikipedia.org/sr-el/%D0%A1%D1%82%D0%B5%D0%B2%D0%B0%D0%BD_%D0%A1%D1%82%D0%BE%D1%98%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%9B_%D0%9C%D0%BE%D0%BA%D1%80%D0%B0%D1%9A%D0%B0%D1%86";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
 
     }
 }
