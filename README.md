@@ -1,4 +1,8 @@
 # Mokranjatzz365Bet
 Korisnicka aplikacija Mokranjatzz365Bet (24.4.2017)
 
-DOBRODOŠLI NA MOKRANJATZZ365BET!
+DOBRODOŠLI NA MOKRANJATZZ365BET! Ovo je moj završni rad koji ću s ponosom predstaviti Visokoj školi elektrotehnike i računarstva u Beogradu (http://viser.edu.rs/) 2018. ili 2019. godine.
+
+Šta je Mokranjatzz365Bet?
+
+- Kladionica.
