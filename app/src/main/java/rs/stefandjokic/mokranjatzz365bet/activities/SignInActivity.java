@@ -70,6 +70,7 @@ public class SignInActivity extends AppCompatActivity {
                     finish();
                     SharedPreferencesManager.getInstance(getApplicationContext()).userLogin(response.body().getUser());
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+
                 } else {
                     Toast.makeText(getApplicationContext(), "Neispravni podaci.", Toast.LENGTH_LONG).show();
                 }

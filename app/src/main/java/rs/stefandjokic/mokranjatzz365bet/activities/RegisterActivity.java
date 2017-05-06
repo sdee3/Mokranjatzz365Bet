@@ -93,6 +93,8 @@ public class RegisterActivity extends AppCompatActivity {
                     finish();
                     SharedPreferencesManager.getInstance(getApplicationContext()).userLogin(response.body().getUser());
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+
+
                 }
             }
 
