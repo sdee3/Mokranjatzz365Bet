@@ -22,12 +22,15 @@ public class SharedPreferencesManager {
         context = ctx;
     }
 
+
+
     public static synchronized SharedPreferencesManager getInstance(Context context){
 
         if(instance == null){
             instance = new SharedPreferencesManager(context);
         }
         return instance;
+
 
     }
 
@@ -51,7 +54,7 @@ public class SharedPreferencesManager {
 
         SharedPreferences sharedPreferences = context.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
 
-        return ((sharedPreferences.getString(KEY_USER_EMAIL, null) != null ) && (sharedPreferences.getString(KEY_USER_USERNAME, null) != null));
+        return ((sharedPreferences.getString(KEY_USER_EMAIL, null) != null ) || (sharedPreferences.getString(KEY_USER_USERNAME, null) != null));
     }
 
     public User getUser(){

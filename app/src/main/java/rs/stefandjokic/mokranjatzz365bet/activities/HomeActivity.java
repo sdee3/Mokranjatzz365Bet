@@ -12,8 +12,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import rs.stefandjokic.mokranjatzz365bet.R;
+import rs.stefandjokic.mokranjatzz365bet.helper.SharedPreferencesManager;
+import rs.stefandjokic.mokranjatzz365bet.models.User;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -33,6 +36,9 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //Ovo iznad ne dirat' - UB'ĆE ME ĆAĆA!
+        Toast.makeText(this, "Ulogovani ste kao " + SharedPreferencesManager.getInstance(this).getUser().getUsername() + ".", Toast.LENGTH_SHORT).show();
     }
 
     @Override

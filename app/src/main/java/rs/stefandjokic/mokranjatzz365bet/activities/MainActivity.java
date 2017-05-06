@@ -1,5 +1,6 @@
 package rs.stefandjokic.mokranjatzz365bet.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -57,4 +58,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
 
     }
+
+    public Context getContext(){
+        return getApplicationContext();
+    }
+
 }
