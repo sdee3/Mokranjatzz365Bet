@@ -38,7 +38,7 @@ public class HomeActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         //Ovo iznad ne dirat' - UB'ĆE ME ĆAĆA!
-        Toast.makeText(this, "Ulogovani ste kao " + SharedPreferencesManager.getInstance(this).getUser().getUsername() + ".", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Ulogovani ste kao " + SharedPreferencesManager.getInstance(this).getUser().getUsername() + ".", Toast.LENGTH_LONG).show();
     }
 
     @Override
