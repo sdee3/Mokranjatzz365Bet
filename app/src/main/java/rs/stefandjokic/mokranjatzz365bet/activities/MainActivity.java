@@ -5,8 +5,6 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -35,8 +33,6 @@ public class MainActivity extends AppCompatActivity {
         if(SharedPreferencesManager.getInstance(this.getApplicationContext()).isLoggedIn()){
             finish();
             startActivity(new Intent(this, HomeActivity.class));
-        }else {
-            Toast.makeText(getApplicationContext(), String.valueOf(SharedPreferencesManager.getInstance(getApplicationContext()).getUser()), Toast.LENGTH_LONG).show();
         }
     }
 
