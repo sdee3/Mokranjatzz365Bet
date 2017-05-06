@@ -19,6 +19,8 @@ import rs.stefandjokic.mokranjatzz365bet.helper.SharedPreferencesManager;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String FINISH_ALERT = "finish_alert";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
             finish();
             startActivity(new Intent(this, HomeActivity.class));
         }
+
+        this.registerReceiver(this.finishAlert, new IntentFilter(FINISH_ALERT));
     }
 
     public void loginActivity(View view) {
@@ -59,6 +63,22 @@ public class MainActivity extends AppCompatActivity {
         i.setData(Uri.parse(url));
         startActivity(i);
 
+    }
+
+    BroadcastReceiver finishAlert = new BroadcastReceiver() {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            MainActivity.this.finish();
+        }
+    };
+
+    @Override
+    public void onDestroy() {
+
+        super.onDestroy();
+        this.unregisterReceiver(finishAlert);
     }
 
 }

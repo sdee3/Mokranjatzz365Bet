@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.content.BroadcastReceiver;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -90,10 +91,12 @@ public class RegisterActivity extends AppCompatActivity {
 
                 //Ako nema greške, ide se na Home Page!
                 if(!response.body().getError()){
+
                     finish();
                     SharedPreferencesManager.getInstance(getApplicationContext()).userLogin(response.body().getUser());
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
 
+                    sendBroadcast(new Intent(MainActivity.FINISH_ALERT));
 
                 }
             }

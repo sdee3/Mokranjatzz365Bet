@@ -67,9 +67,12 @@ public class SignInActivity extends AppCompatActivity {
             public void onResponse(Call<Result> call, Response<Result> response) {
                 progressDialog.dismiss();
                 if (!response.body().getError()) {
+
                     finish();
                     SharedPreferencesManager.getInstance(getApplicationContext()).userLogin(response.body().getUser());
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+
+                    sendBroadcast(new Intent(MainActivity.FINISH_ALERT));
 
                 } else {
                     Toast.makeText(getApplicationContext(), "Neispravni podaci.", Toast.LENGTH_LONG).show();
