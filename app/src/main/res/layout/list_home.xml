@@ -29,7 +29,8 @@
                 android:id="@+id/imageButtonMessage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_view" />
+                android:background="@drawable/ic_view"
+                android:onClick=""/>
 
         </LinearLayout>
 

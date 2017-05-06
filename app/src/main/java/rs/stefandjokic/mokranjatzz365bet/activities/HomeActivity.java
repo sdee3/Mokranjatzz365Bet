@@ -87,6 +87,8 @@ public class HomeActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_sportovi) {
 
+        } else if (id == R.id.nav_profile) {
+
         } else if (id == R.id.nav_logout) {
 
             SharedPreferencesManager.getInstance(this).logOut();
