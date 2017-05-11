@@ -36,6 +36,7 @@
     <string name="change_password_txt">Promena lozinke</string>
     <string name="total_kvota">Ukupna kvota:</string>
     <string name="potential_win">Potencijalni dobitak (RSD):</string>
+    <string name="current_cash">Stanje na računu: </string>
 
     <!--Za navigaciju i ostalo definisano od strane Android-a-->
     <string name="title_activity_home">Početna</string>

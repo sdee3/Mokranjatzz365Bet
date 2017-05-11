@@ -53,9 +53,7 @@ public class User {
     }
 
     public String toString(){
-
         return this.id + " " + this.username + " " + this.email + " " + this.password + " " + this.full_name + "\n";
-
     }
 
     public float getCredit() {

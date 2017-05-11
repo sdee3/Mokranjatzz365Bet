@@ -16,7 +16,8 @@
         android:contentDescription="Default User Icon"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:paddingTop="8dp"
+        android:paddingBottom="-8dp"
         app:srcCompat="@drawable/mokranjac_default_user" />
 
     <TextView
@@ -24,16 +25,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/nav_header_email"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/nav_header_credit"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="12sp" />
 
 </LinearLayout>
