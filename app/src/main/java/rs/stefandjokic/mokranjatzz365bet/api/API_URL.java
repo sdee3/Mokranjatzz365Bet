@@ -2,6 +2,7 @@ package rs.stefandjokic.mokranjatzz365bet.api;
 
 public class API_URL {
 
-    public static final String BASE_URL = "http://93.86.138.24/php/Mokranjatzz/public/";
+    private static String currentIP = "93.86.138.24";
 
+    public static final String BASE_URL = "http://" + currentIP + "/php/Mokranjatzz/public/";
 }
