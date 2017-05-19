@@ -69,7 +69,7 @@ public class RegisterActivity extends AppCompatActivity {
         String full_name = editTextFullName.getText().toString();
 
         //Retrofit Object
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(API_URL.BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(API_URL.API_URL).addConverterFactory(GsonConverterFactory.create()).build();
         //Defining Retrofit API service
         APIService service = retrofit.create(APIService.class);
 
